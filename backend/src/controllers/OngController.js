@@ -6,14 +6,14 @@ const connection = require('../database/connection');
 // exportar os objestos com os métodos
 module.exports = {
 
-// criando uma rota com a listagem das ongs
-	async index (request, response)  {
+	// criando uma rota com a listagem das ongs
+	async index(request, response) {
 		const ongs = await connection('ongs').select('*');
 		return response.json(ongs);
 	},
 
 	// método create
-	async create(request, response){
+	async create(request, response) {
 		// fazendo a desetruturação dos dados em uma váriavel separada
 		const {
 			name,
@@ -38,5 +38,5 @@ module.exports = {
 		return response.json({
 			id
 		});
-}
+	}
 };
