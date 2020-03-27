@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom'; // a dom é a árvore de elementos
+import ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(
